@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash0"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="注册"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_twenty_two" />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dip_thirty"
+        android:paddingEnd="@dimen/dip_thirty">
+
+        <com.hospitalnavigation.login.LoginButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dip_fifty"
+            android:layout_marginBottom="@dimen/dip_thirty"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_login">
+
+            <LinearLayout
+                android:id="@+id/ll_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dip_thirty_five"
+                    android:layout_height="@dimen/dip_thirty_five"
+                    android:src="@drawable/login_account" />
+
+                <EditText
+                    android:id="@+id/ev_userName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_forty"
+                    android:layout_marginStart="@dimen/dip_ten"
+                    android:layout_marginLeft="@dimen/dip_ten"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入账号"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/translucent_white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_one"
+                android:layout_below="@id/ll_login_account"
+                android:layout_marginTop="@dimen/dip_four"
+                android:background="@color/translucent_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_login_account"
+                android:layout_marginTop="@dimen/dip_twenty"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dip_thirty_five"
+                    android:layout_height="@dimen/dip_thirty_five"
+                    android:src="@drawable/login_password" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_forty"
+                    android:layout_marginStart="@dimen/dip_ten"
+                    android:layout_marginLeft="@dimen/dip_ten"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/translucent_white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_one"
+                android:layout_below="@id/ll_login_password"
+                android:layout_marginTop="@dimen/dip_four"
+                android:background="@color/translucent_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_login_password"
+                android:layout_marginTop="@dimen/dip_twenty"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dip_thirty_five"
+                    android:layout_height="@dimen/dip_thirty_five"
+                    android:src="@mipmap/ic_phone" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_forty"
+                    android:layout_marginStart="@dimen/dip_ten"
+                    android:layout_marginLeft="@dimen/dip_ten"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/translucent_white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_one"
+                android:layout_below="@id/ll_login_phone"
+                android:layout_marginTop="@dimen/dip_four"
+                android:background="@color/translucent_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_login_phone"
+                android:layout_marginTop="@dimen/dip_twenty"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dip_thirty_five"
+                    android:layout_height="@dimen/dip_thirty_five"
+                    android:src="@mipmap/ic_email" />
+
+                <EditText
+                    android:id="@+id/ev_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dip_forty"
+                    android:layout_marginStart="@dimen/dip_ten"
+                    android:layout_marginLeft="@dimen/dip_ten"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入邮箱"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/translucent_white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_one"
+                android:layout_below="@id/ll_login_email"
+                android:layout_marginTop="@dimen/dip_four"
+                android:background="@color/translucent_white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

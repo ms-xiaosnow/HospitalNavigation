@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">医院导航</string>
+    <string name="event_click_content">拾取对象类型: %1$s\n手指点击位置坐标: 楼层(groupId): %2$d\n坐标(mapCoord): x=%3$.2f , y=%4$.2f</string>
+    <string name="label_walk_format">距终点 %1$.2f米\t\t时间%2$d分钟\n路线提示：%3$s</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="no_login">点击登录</string>
+    <string name="setting">设置</string>
+    <string name="logout">退出</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xsl.jin.hellofengmap.com.xsl.hellofengmap.PersonInfoActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="个人信息"
+        android:textSize="40sp" />
+
+
+
+    <TextView
+        android:id="@+id/change_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换头像"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/save_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="保存"/>
+
+
+</LinearLayout>
